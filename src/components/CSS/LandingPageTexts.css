@@ -1,0 +1,18 @@
+.LandingPageTexts-container {
+  margin-top: 100px;
+  background-color: #21aae0;
+  height: 300px;
+  padding: 20px;
+}
+.LandingPageTexts-container-Texts {
+  padding-top: 60px;
+  width: 800px;
+}
+.LandingPageTexts-container h2 {
+  font: roboto;
+  font-weight: 900;
+  color: white;
+}
+.LandingPageTexts-container p {
+  font: roboto;
+}
