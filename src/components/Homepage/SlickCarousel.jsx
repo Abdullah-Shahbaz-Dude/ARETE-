@@ -15,7 +15,18 @@ const SlickCarousel = () => {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 768, // When screen width is 768px or smaller
+        settings: {
+          slidesToShow: 1, // Show only 1 slide
+          centerMode: false, // Disable center mode for better mobile view
+          centerPadding: "0px", // Remove padding to avoid cut-off edges
+        },
+      },
+    ],
   };
+
   return (
     <section className="slick-carousel-container">
       <Slider {...settings}>

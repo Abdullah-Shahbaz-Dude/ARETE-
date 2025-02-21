@@ -210,3 +210,13 @@
     bottom: -30px; /* Adjust dots below buttons */
   }
 }
+@media (max-width: 768px) {
+  .slick-carousel-container .slides-content-container {
+    width: 100%; /* Full width */
+  }
+
+  .slick-carousel-container .slides-images img {
+    max-width: 100%;
+    height: auto;
+  }
+}
