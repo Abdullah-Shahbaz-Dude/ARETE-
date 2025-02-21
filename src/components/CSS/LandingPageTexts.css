@@ -3,21 +3,63 @@
   background-color: #21aae0;
   height: 300px;
   padding: 20px;
+  text-align: center;
 }
+
 .LandingPageTexts-container-Texts {
   padding-top: 60px;
-
-  /* width: 800px; */
+  max-width: 800px;
+  margin: auto;
 }
+
 .LandingPageTexts-container h2 {
   font-family: "M PLUS Rounded 1c";
   font-weight: 900;
   padding-bottom: 4px;
   color: white;
+  font-size: 2rem;
 }
+
 .LandingPageTexts-container p {
   font-family: "M PLUS Rounded 1c";
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+/* 📱 Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .LandingPageTexts-container {
+    height: auto;
+    padding: 15px;
+  }
+
+  .LandingPageTexts-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .LandingPageTexts-container p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* 📟 Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+  .LandingPageTexts-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .LandingPageTexts-container-Texts {
+    padding-top: 40px;
+  }
+
+  .LandingPageTexts-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .LandingPageTexts-container p {
+    font-size: 20px;
+  }
 }
