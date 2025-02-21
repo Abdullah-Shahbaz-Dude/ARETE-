@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
+
+import Banner from "../components/Homepage/Banner";
 import Logo from "../components/Logo";
 import Programmes from "../components/Programmes";
 import Team from "../components/Team";
@@ -10,13 +10,27 @@ import LandingPageTexts from "../components/LandingPageTexts";
 import BookUs from "../components/BookUs";
 import JoinUS from "../components/JoinUS";
 import FocusArea from "../components/FocusArea";
+import WhatBanner from "../components/What We do/WhatBanner";
+import SpecialistAreas from "../components/Homepage/SpecialistAreas";
 
 const Landing = () => {
   return (
     <div>
       <HeroAuto />
-      <Banner />
-      <FocusArea />
+      <Banner
+        heading="What We Do"
+        paragraph="At Arete, we support individuals and organisations unlock their
+              highest potential through psychology-driven interventions that
+              support innovation, digital transformation, and personal
+              development. Whether you’re navigating change, overcoming
+              challenges, or striving for excellence, we provide the insight,
+              tools, and guidance to help you grow, adapt, and achieve.
+              Excellence isn’t just a goal it’s the foundation of everything we
+              do."
+        buttontxt="Find out More"
+      />
+      <SpecialistAreas />
+
       <SlickCarousel />
       <Team />
       <LandingPageTexts />

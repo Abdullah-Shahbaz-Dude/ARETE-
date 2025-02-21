@@ -26,7 +26,14 @@
   margin-bottom: 15px;
   color: #facc15; /* Highlight color */
 }
-
+.arete-container {
+  width: 100%;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0c2c3c, #0c2c3c);
+  color: white;
+  padding-bottom: 1px;
+  text-align: center;
+}
 .arete-content ul {
   list-style-type: none;
   padding: 0;

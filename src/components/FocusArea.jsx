@@ -6,7 +6,7 @@ const FocusArea = () => {
     <>
       <div className="focusArea-container">
         <div className="focusArea-text">
-          <h1>Areas We Focus On</h1>
+          <h1 className="focusArea-heading">Areas We Focus On</h1>
           <div className="focusArea-content">
             <div className="right-focusArea">
               <h1>ARETE for Organizations</h1>
