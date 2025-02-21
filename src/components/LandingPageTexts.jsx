@@ -6,11 +6,12 @@ const LandingPageTexts = () => {
     <>
       <div className="LandingPageTexts-container">
         <div className="LandingPageTexts-container-Texts">
-          <h2>See the measurable benefits of more good days at work...</h2>
+          <h2>Are you ready to lead with excellence?</h2>
           <p>
-            See how creating more Good Days at Work can save your organisation
-            thousands annually in reduced absenteeism and increased
-            productivity.
+            At Arete, we don’t just help businesses and individuals adapt—we
+            help them lead the way.  to unlock your potential, embrace
+            transformation, and achieve lasting success, let’s start a
+            conversation.
           </p>
         </div>
       </div>

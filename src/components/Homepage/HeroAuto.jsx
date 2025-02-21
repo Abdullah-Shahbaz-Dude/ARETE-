@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import Slider from "react-slick";
-import img_1 from "../assets/images/IMG_7523.jpg";
-import img_2 from "../assets/images/IMG_7551.jpg";
-import img_3 from "../assets/images/IMG_8207.jpg";
-import "../components/CSS/HeroAuto.css";
+import img_1 from "../../assets/images/HomePage/IMG_7523.jpg";
+import img_2 from "../../assets/images/HomePage/IMG_7551.jpg";
+import img_3 from "../../assets/images/HomePage/IMG_8207.jpg";
+import "./CSS/HeroAuto.css";
 
 const HeroAuto = () => {
   const sliderRef = useRef(null);

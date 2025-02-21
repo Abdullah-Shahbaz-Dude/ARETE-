@@ -12,7 +12,7 @@ const slider = [
   {
     id: 2,
     img: image2,
-    text: "Neuro-diversity awarness in the workplace for strategic advantages",
+    text: "Harnessing Neurodiversity in the Workplace for Strategic advantage ",
   },
   {
     id: 3,

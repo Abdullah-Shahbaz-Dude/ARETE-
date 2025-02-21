@@ -43,25 +43,29 @@
 /* Text overlay for all images */
 .global-overlay {
   position: absolute;
-  top: 80%;
-  left: 30%;
+  top: 75%; /* Adjust position */
+  left: 52%;
   transform: translate(-50%, -50%);
   text-align: left;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 50%;
+  color: rgba(255, 145, 76, 1); /* Ensure full opacity */
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%; /* Ensures full width */
   z-index: 2;
 }
 
 .global-overlay h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  white-space: normal; /* Allow text wrapping */
+  max-width: 100%;
 }
 
 .global-overlay p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-weight: bold;
 }
 
 /* Slick Slide Styling */
@@ -89,26 +93,28 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .global-overlay {
+    width: 70%;
     top: 78%;
     left: 35%;
-    width: 60%;
   }
   .global-overlay h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    white-space: normal; /* Allow text wrapping */
   }
   .global-overlay p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .global-overlay {
+    width: 80%;
     top: 75%;
     left: 40%;
-    width: 70%;
   }
   .global-overlay h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    white-space: normal;
   }
   .global-overlay p {
     font-size: 1rem;
@@ -117,13 +123,14 @@
 
 @media (max-width: 480px) {
   .global-overlay {
+    width: 90%;
     top: 70%;
     left: 50%;
-    width: 80%;
     text-align: center;
   }
   .global-overlay h2 {
     font-size: 1.8rem;
+    white-space: normal;
   }
   .global-overlay p {
     font-size: 0.9rem;

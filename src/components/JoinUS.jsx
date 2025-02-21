@@ -5,8 +5,7 @@ const JoinUS = () => {
   return (
     <div className="joinus">
       <h1>
-        Join the organisations improving workplace wellbeing and creating more
-        Good Days at Work, for more people, more often.
+        Contact us today to discover how we can help you think differently.
       </h1>
       <button className="joinus-btn btn"> Join us</button>
     </div>

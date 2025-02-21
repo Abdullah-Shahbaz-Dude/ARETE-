@@ -6,13 +6,16 @@
 }
 .LandingPageTexts-container-Texts {
   padding-top: 60px;
-  width: 800px;
+
+  /* width: 800px; */
 }
 .LandingPageTexts-container h2 {
   font: roboto;
   font-weight: 900;
+  padding-bottom: 4px;
   color: white;
 }
 .LandingPageTexts-container p {
   font: roboto;
+  font-size: 30px;
 }

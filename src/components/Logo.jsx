@@ -7,14 +7,7 @@ const Logo = () => {
       <div className="logo-container">
         <div className="logo-text">
           <div className="logo-text-left">
-            <h1>See how we’ve helped others</h1>
-          </div>
-          <div className="logo-text-right">
-            <p>
-              From global corporations to SMEs, discover how our tailored
-              solutions have transformed workplace cultures and created Good
-              Days at Work for more organisations.
-            </p>
+            <h2> Organisations we have worked with </h2>
           </div>
         </div>
         <div className="logo-images">

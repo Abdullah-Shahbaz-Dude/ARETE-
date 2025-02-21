@@ -3,7 +3,7 @@ import WhatHero from "../components/What We do/WhatHero";
 import WhatBanner from "../components/What We do/WhatBanner";
 import Logo from "../components/Logo";
 import BookUs from "../components/BookUs";
-import SlickCarousel from "../components/SlickCarousel";
+import SlickCarousel from "../components/Homepage/SlickCarousel";
 
 const What = () => {
   return (

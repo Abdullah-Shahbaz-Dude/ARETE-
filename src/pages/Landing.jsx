@@ -4,13 +4,11 @@ import Banner from "../components/Homepage/Banner";
 import Logo from "../components/Logo";
 import Programmes from "../components/Programmes";
 import Team from "../components/Team";
-import SlickCarousel from "../components/SlickCarousel";
-import HeroAuto from "../components/HeroAuto";
+import SlickCarousel from "../components/Homepage/SlickCarousel";
+import HeroAuto from "../components/Homepage/HeroAuto";
 import LandingPageTexts from "../components/LandingPageTexts";
 import BookUs from "../components/BookUs";
 import JoinUS from "../components/JoinUS";
-import FocusArea from "../components/FocusArea";
-import WhatBanner from "../components/What We do/WhatBanner";
 import SpecialistAreas from "../components/Homepage/SpecialistAreas";
 
 const Landing = () => {
@@ -30,14 +28,11 @@ const Landing = () => {
         buttontxt="Find out More"
       />
       <SpecialistAreas />
-
       <SlickCarousel />
-      <Team />
+      <Logo />
       <LandingPageTexts />
-      <Banner />
       <JoinUS />
       <Programmes />
-      <Logo />
       <BookUs />
     </div>
   );
