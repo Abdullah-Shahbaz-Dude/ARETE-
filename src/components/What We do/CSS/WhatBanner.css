@@ -14,17 +14,19 @@
 }
 
 .arete-content p {
+  font-family: "M PLUS Rounded 1c", serif;
+
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .arete-content h3 {
-  font-size: 1.8rem;
+  font-family: "M PLUS Rounded 1c", serif;
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 15px;
-  color: #facc15; /* Highlight color */
+  color: #ff914c; /* Highlight color */
 }
 .arete-container {
   width: 100%;
@@ -40,6 +42,8 @@
 }
 
 .arete-content li {
+  font-family: "M PLUS Rounded 1c", serif;
+
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -49,7 +53,7 @@
 
 .arete-content li::before {
   content: "•";
-  color: #facc15;
+  color: #ff914c;
   font-size: 1.5rem;
   position: absolute;
   left: 0;

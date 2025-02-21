@@ -56,7 +56,9 @@
 
 /* 📝 Text styling */
 .slick-carousel-container .slides-text {
-  font-weight: 600;
+  font-weight: 800;
+  line-height: 20px;
+  font-family: "M PLUS Rounded 1c";
   color: #333;
   margin-top: 10px;
   position: absolute;

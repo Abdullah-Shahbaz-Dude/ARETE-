@@ -10,12 +10,14 @@
   /* width: 800px; */
 }
 .LandingPageTexts-container h2 {
-  font: roboto;
+  font-family: "M PLUS Rounded 1c";
   font-weight: 900;
   padding-bottom: 4px;
   color: white;
 }
 .LandingPageTexts-container p {
-  font: roboto;
-  font-size: 25px;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
 }

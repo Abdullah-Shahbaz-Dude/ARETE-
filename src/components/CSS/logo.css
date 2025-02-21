@@ -14,8 +14,8 @@
   justify-content: center;
 }
 .logo-text-left h2 {
-  font-family: roboto;
-  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 800;
   font-size: -webkit-xxx-large;
   text-align: left;
   padding-left: 20px;
@@ -74,5 +74,6 @@ button:hover img {
 h1 {
   font-size: 18px;
   margin-top: 10px;
+
   color: #333; /* Darker text */
 }
