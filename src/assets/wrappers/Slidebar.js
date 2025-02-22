@@ -6,7 +6,7 @@ const Wrapper = styled.aside`
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(12, 44, 60, 0.9);
+  background: rgba(12, 44, 60);
   z-index: 1000;
   align-items: center;
   display: flex;
