@@ -5,7 +5,7 @@ import SlickCarousel from "../components/Homepage/SlickCarousel";
 import HeroAuto from "../components/Homepage/HeroAuto";
 import LandingPageTexts from "../components/Homepage/LandingPageTexts";
 
-import JoinUS from "../components/JoinUS";
+import JoinUS from "../components/Global Components/JoinUS";
 import SpecialistAreas from "../components/Homepage/SpecialistAreas";
 import Ready from "../components/Homepage/Ready";
 import Banner from "../components/Homepage/Banner";

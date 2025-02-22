@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { solutions } from "./data"; // Import your solutions array
-import "../components/CSS/Dropdown.css";
+import { solutions } from "../data"; // Import your solutions array
+import "./CSS/Dropdown.css";
 
 const Dropdown = ({ closeDropDown }) => {
   useEffect(() => {

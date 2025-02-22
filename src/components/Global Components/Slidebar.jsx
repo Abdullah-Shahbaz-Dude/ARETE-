@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Wrapper from "../assets/wrappers/Slidebar";
+import Wrapper from "../../assets/wrappers/Slidebar";
 import { FaFacebook, FaLinkedin, FaTwitter, FaTimes } from "react-icons/fa";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 

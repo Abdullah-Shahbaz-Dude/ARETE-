@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/CSS/JoinUs.css";
+import "./CSS/JoinUs.css";
 
 const JoinUS = () => {
   return (

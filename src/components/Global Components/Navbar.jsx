@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/logo transperent.png";
+import logo from "../../assets/images/logo transperent.png";
 
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Slidebar from "../components/Slidebar";
+import Slidebar from "./Slidebar";
 import Dropdown from "./Dropdown";
-import "../components/CSS/Navbar.css";
+import "./CSS/Navbar.css";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);

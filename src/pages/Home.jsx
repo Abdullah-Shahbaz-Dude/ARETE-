@@ -1,9 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Slidebar from "../components/Slidebar";
-import Fotter from "../components/Fotter";
-import Dropdown from "../components/Dropdown";
+import Navbar from "../components/Global Components/Navbar";
+import Slidebar from "../components/Global Components/Slidebar";
+import Fotter from "../components/Global Components/Fotter";
 
 const Home = () => {
   return (
