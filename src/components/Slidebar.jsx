@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../assets/wrappers/Slidebar";
 import { FaFacebook, FaLinkedin, FaTwitter, FaTimes } from "react-icons/fa";
+import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 
 const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
   const [sidebarsolution, setSidebarsolution] = useState(false);
   const handleSolutions = () => {
-    setSidebarsolution((prev) => !prev);
+    setSidebarsolution(!sidebarsolution);
   };
 
   return (
@@ -38,17 +39,24 @@ const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
               onClick={handleSolutions}
             >
               Solutions
+              {sidebarsolution ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
             </button>
             <div
               className={
-                sidebarsolution
-                  ? "sidebar-solutions-show  "
-                  : "sidebar-solutions"
+                sidebarsolution ? "sidebar-solutions-show" : "sidebar-solutions"
               }
             >
               <ul>
-                <li>Individuals </li>
-                <li>Organizations</li>
+                <li>
+                  <Link to="/solutions/individuals" onClick={closeSidebar}>
+                    Individuals
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/solutions/organizations" onClick={closeSidebar}>
+                    Organizations
+                  </Link>
+                </li>
               </ul>
             </div>
           </li>

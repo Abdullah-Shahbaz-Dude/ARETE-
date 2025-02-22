@@ -20,11 +20,13 @@ const Wrapper = styled.aside`
   }
 
   .slidebar-solutions-btn {
-    padding: 20px;
+    padding: 10px;
+    padding-left: 0px;
     background: transparent;
     border: transparent;
     font-size: 2rem;
-    color: orange;
+    color: rgb(255, 145, 76);
+    font-weight: 600;
     cursor: pointer;
     text-align: left;
   }
