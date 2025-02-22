@@ -180,7 +180,7 @@
 }
 
 /* Show button on hover over the image */
-.slick-carousel-container .slides-content-container:hover .btn {
+.slick-carousel-container .slides-content-container:hover .slick-coursel-btn {
   background-color: #ff6600;
 }
 
