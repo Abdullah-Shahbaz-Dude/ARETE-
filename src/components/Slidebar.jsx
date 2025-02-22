@@ -6,9 +6,6 @@ import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 
 const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
   const [sidebarsolution, setSidebarsolution] = useState(false);
-  const handleSolutions = () => {
-    setSidebarsolution(!sidebarsolution);
-  };
 
   return (
     <Wrapper className={isSidebarOpen ? "show-sidebar" : ""}>
@@ -36,15 +33,16 @@ const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
           <li>
             <button
               className="slidebar-solutions-btn"
-              onClick={handleSolutions}
+              onClick={() => setSidebarsolution(!sidebarsolution)}
             >
-              Solutions
+              Solutions{" "}
               {sidebarsolution ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
             </button>
+
             <div
-              className={
-                sidebarsolution ? "sidebar-solutions-show" : "sidebar-solutions"
-              }
+              className={`sidebar-solutions ${
+                sidebarsolution ? "sidebar-solutions-show" : ""
+              }`}
             >
               <ul>
                 <li>
@@ -67,7 +65,6 @@ const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
           </li>
         </ul>
 
-        {/* Social icons */}
         <ul className="social-icons">
           <li>
             <a

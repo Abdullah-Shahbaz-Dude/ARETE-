@@ -21,7 +21,6 @@ const Wrapper = styled.aside`
 
   .slidebar-solutions-btn {
     padding: 10px;
-    padding-left: 0px;
     background: transparent;
     border: transparent;
     font-size: 2rem;
@@ -37,20 +36,21 @@ const Wrapper = styled.aside`
   }
 
   .sidebar-solutions {
-    height: 15vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
     width: 300px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     color: aqua;
-    display: flex;
     flex-direction: column;
     line-height: 30px;
     justify-content: center;
-    display: none;
   }
+
   .sidebar-solutions-show {
-    display: block;
-    transition: all;
+    max-height: 200px;
   }
+
   .sidebar-links a {
     font-size: 2rem;
     color: rgba(255, 145, 76);
