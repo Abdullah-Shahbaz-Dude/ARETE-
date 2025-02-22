@@ -4,17 +4,14 @@ const Wrapper = styled.aside`
   position: fixed;
   top: 0;
   right: 0;
-  width: 50vh;
+  width: 100%;
   height: 100%;
-  background: rgba(12, 44, 60, 0.8);
+  background: rgba(12, 44, 60, 0.9);
   z-index: 1000;
-  place-items: left;
   align-items: center;
-  justify-content: left;
   display: flex;
   transition: var(--transition);
   color: white;
-
   transform: translateX(100%);
 
   &.show-sidebar {
@@ -22,6 +19,8 @@ const Wrapper = styled.aside`
   }
 
   .sidebar-links {
+    display: flex;
+    flex-direction: column;
   }
 
   .sidebar-links a {
