@@ -166,16 +166,16 @@
   border-radius: 8px;
   transform: scale(1.2); /* Zooms in the image */
 }
-
-/* Hide the button by default */
-.slick-carousel-container .btn {
-  position: absolute;
-  left: 58%;
-  top: 73%;
-  background-color: white;
+.slick-coursel-btn {
+  background-color: rgb(12, 44, 60);
+  position: relative;
+  top: 62px;
+  border: transparent;
+  padding: 10px;
   color: white;
-  border: none;
-  padding: 15px 20px;
+}
+.slick-coursel-btn:hover {
+  background-color: #ff6600;
   cursor: pointer;
 }
 

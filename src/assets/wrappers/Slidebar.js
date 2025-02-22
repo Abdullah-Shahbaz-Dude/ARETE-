@@ -17,12 +17,33 @@ const Wrapper = styled.aside`
   &.show-sidebar {
     transform: translateX(0);
   }
-
+  .slidebar-solutions-btn {
+    padding: 20px;
+    background: transparent;
+    border: transparent;
+    font-size: larger;
+    color: orange;
+  }
   .sidebar-links {
     display: flex;
     flex-direction: column;
   }
 
+  .sidebar-solutions {
+    height: 15vh;
+    width: 300px;
+    background-color: aliceblue;
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: center;
+    display: none;
+  }
+  .sidebar-solutions-show {
+    display: block;
+    transition: all;
+  }
   .sidebar-links a {
     font-size: 2rem;
     color: rgba(255, 145, 76);

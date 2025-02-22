@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../assets/wrappers/Slidebar";
 import { FaFacebook, FaLinkedin, FaTwitter, FaTimes } from "react-icons/fa";
 
 const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
+  const [sidebarsolution, setSidebarsolution] = useState(true);
+  const handleSolutions = () => {
+    setSidebarsolution((prev) => !prev);
+  };
+
   return (
     <Wrapper className={isSidebarOpen ? "show-sidebar" : ""}>
       <div className="sidebar">
@@ -28,9 +33,24 @@ const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
             </Link>
           </li>
           <li>
-            <Link to="/solutions" onClick={closeSidebar}>
+            <button
+              className="slidebar-solutions-btn"
+              onClick={handleSolutions}
+            >
               Solutions
-            </Link>
+            </button>
+            <div
+              className={
+                sidebarsolution
+                  ? "sidebar-solutions-show  "
+                  : "sidebar-solutions"
+              }
+            >
+              <ul>
+                <li>Individuals </li>
+                <li>Organizations</li>
+              </ul>
+            </div>
           </li>
           <li>
             <Link to="/contact" onClick={closeSidebar}>

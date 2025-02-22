@@ -39,7 +39,7 @@ const SlickCarousel = () => {
                   <img className="slides-img" src={img} alt="Your Image" />
                 </div>
                 <div className="slides-text">{text}</div>
-                <button className="btn">Read More</button>
+                <button className="slick-coursel-btn ">Read More</button>
               </div>
             </article>
           );
