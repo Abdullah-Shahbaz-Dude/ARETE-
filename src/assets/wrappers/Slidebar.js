@@ -3,34 +3,35 @@ import styled from "styled-components";
 const Wrapper = styled.aside`
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 50vh;
   height: 100%;
-  background: rgb(109, 72, 72);
+  background: rgba(12, 44, 60);
   z-index: 1000;
-  display: grid;
-  place-items: center;
+  place-items: left;
+  align-items: center;
+  justify-content: left;
+  display: flex;
   transition: var(--transition);
+  color: white;
 
-  /* Initially hidden */
-  transform: translateX(-100%);
+  transform: translateX(100%);
 
   &.show-sidebar {
     transform: translateX(0);
   }
 
   .sidebar-links {
-    text-align: center;
   }
 
   .sidebar-links a {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    color: rgba(255, 145, 76);
     text-transform: capitalize;
-    color: var(--clr-grey-3);
     transition: var(--transition);
     letter-spacing: var(--spacing);
-    display: inline-block;
     margin-bottom: 1.5rem;
+    line-height: 3rem;
   }
 
   .sidebar-links a:hover {
@@ -56,7 +57,7 @@ const Wrapper = styled.aside`
   }
 
   .social-icons a:hover {
-    color: white;
+    color: rgb(255, 145, 76);
   }
 
   .close-btn {

@@ -6,6 +6,9 @@
   position: relative;
   overflow: hidden;
 }
+.slick-carousel-container .slides-container {
+  background-color: #0c2c3c;
+}
 
 /* Ensure images fill the full screen */
 .slider-container img {

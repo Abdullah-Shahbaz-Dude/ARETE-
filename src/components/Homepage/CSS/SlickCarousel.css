@@ -18,7 +18,7 @@
   position: relative;
   width: 500px; /* Increase width */
   height: 700px; /* Increase height */
-  background-color: #0c2c3c;
+  background-color: white;
   top: 10%; /* Adjust positioning */
 }
 
@@ -172,7 +172,7 @@
   position: absolute;
   left: 58%;
   top: 73%;
-  background-color: #0c2c3c;
+  background-color: white;
   color: white;
   border: none;
   padding: 15px 20px;

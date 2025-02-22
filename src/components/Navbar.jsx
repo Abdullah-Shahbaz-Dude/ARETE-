@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo transperent.png";
+
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Slidebar from "../components/Slidebar";
@@ -55,11 +56,16 @@ const Navbar = () => {
           </li>
         </ul>
 
+        {/* Corrected Button */}
         <button className="nav-btn" onClick={() => setIsSidebarOpen(true)}>
           <FaBars />
         </button>
 
-        {isSidebarOpen && <Slidebar />}
+        {/* Pass `isSidebarOpen` Prop to Sidebar */}
+        <Slidebar
+          isSidebarOpen={isSidebarOpen}
+          closeSidebar={() => setIsSidebarOpen(false)}
+        />
       </nav>
     </>
   );
