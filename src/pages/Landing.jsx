@@ -1,16 +1,14 @@
 import React from "react";
 
-import Banner from "../components/Homepage/Banner";
-import Logo from "../components/Logo";
-import Programmes from "../components/Programmes";
-import Team from "../components/Team";
+import Logo from "../components/Homepage/Logo";
 import SlickCarousel from "../components/Homepage/SlickCarousel";
 import HeroAuto from "../components/Homepage/HeroAuto";
-import LandingPageTexts from "../components/LandingPageTexts";
-import BookUs from "../components/BookUs";
+import LandingPageTexts from "../components/Homepage/LandingPageTexts";
+
 import JoinUS from "../components/JoinUS";
 import SpecialistAreas from "../components/Homepage/SpecialistAreas";
 import Ready from "../components/Homepage/Ready";
+import Banner from "../components/Homepage/Banner";
 
 const Landing = () => {
   return (
@@ -34,8 +32,6 @@ const Landing = () => {
       <Ready />
       <LandingPageTexts />
       <JoinUS />
-      <Programmes />
-      <BookUs />
     </div>
   );
 };

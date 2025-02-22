@@ -1,6 +1,6 @@
 import React from "react";
-import "../components/CSS/LandingPageTexts.css";
-import img from "../assets/images/HomePage/landingPageTextimg1.svg";
+import "./CSS/LandingPageTexts.css";
+import img from "../../assets/images/HomePage/landingPageTextimg1.svg";
 
 const LandingPageTexts = () => {
   return (

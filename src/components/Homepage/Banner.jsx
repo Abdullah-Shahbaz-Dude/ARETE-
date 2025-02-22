@@ -1,6 +1,6 @@
 import React from "react";
 import imgHomepageBanner from "../../assets/images/HomePage/homepagebanner.jpg";
-import("../Homepage/CSS/Banner2.css");
+import "../Homepage/CSS/Banner2.css";
 import image from "../../assets/images/HomePage/img1.jpeg";
 
 const Banner = ({ heading, paragraph, buttontxt }) => {

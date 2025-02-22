@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollOrganization from "../components/Organizations/ScrollOrganization";
-import Programmes from "../components/Logo";
+import Programmes from "../components/Homepage/Logo";
 import OrganizationHero from "../components/Organizations/OrganizationHero";
 import TextParagraph from "../components/Organizations/TextParagraph";
 

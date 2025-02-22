@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo transperent.png";
+import logo from "../../assets/images/logo transperent.png";
 import "./CSS/logo.css";
 const Logo = () => {
   return (
