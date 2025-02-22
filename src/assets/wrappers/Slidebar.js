@@ -21,6 +21,7 @@ const Wrapper = styled.aside`
 
   .slidebar-solutions-btn {
     padding: 10px;
+    padding-left: 0px;
     background: transparent;
     border: transparent;
     font-size: 2rem;
