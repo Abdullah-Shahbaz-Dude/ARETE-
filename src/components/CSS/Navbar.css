@@ -10,6 +10,7 @@ nav {
   z-index: 10;
   height: 5rem;
 }
+
 .nav-header {
   display: flex;
   justify-items: baseline;
@@ -27,6 +28,7 @@ ul li {
   border: transparent;
   color: #fff;
   background: transparent;
+  display: none;
 }
 .nav-btn:hover {
   cursor: pointer;
@@ -64,6 +66,14 @@ nav .dropdown-btn {
 }
 @media (max-width: 768px) {
   .hamburger {
+    display: block;
+  }
+
+  .nav-btn {
+    font-size: 1.5rem;
+    border: transparent;
+    color: #fff;
+    background: transparent;
     display: block;
   }
 

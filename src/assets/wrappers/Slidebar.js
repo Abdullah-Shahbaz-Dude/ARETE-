@@ -6,7 +6,7 @@ const Wrapper = styled.aside`
   right: 0;
   width: 50vh;
   height: 100%;
-  background: rgba(12, 44, 60);
+  background: rgba(12, 44, 60, 0.8);
   z-index: 1000;
   place-items: left;
   align-items: center;
@@ -25,7 +25,7 @@ const Wrapper = styled.aside`
   }
 
   .sidebar-links a {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: rgba(255, 145, 76);
     text-transform: capitalize;
     transition: var(--transition);
@@ -64,7 +64,7 @@ const Wrapper = styled.aside`
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background: transparent;
     border: none;
     color: red;
