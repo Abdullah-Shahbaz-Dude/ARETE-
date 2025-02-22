@@ -39,7 +39,7 @@ const Wrapper = styled.aside`
   .sidebar-solutions {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.1s ease-in-out;
     width: 300px;
     /* background-color: aliceblue; */
     color: aqua;

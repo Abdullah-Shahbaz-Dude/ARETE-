@@ -1,12 +1,15 @@
 import React from "react";
 import "../components/CSS/LandingPageTexts.css";
+import img from "../assets/images/HomePage/landingPageTextimg1.svg";
 
 const LandingPageTexts = () => {
   return (
     <>
       <div className="LandingPageTexts-container">
-        <div className="LandingPageTexts-container-Texts">
-          <h2>Are you ready to lead with excellence?</h2>
+        <div className="LandingPageTexts-container-right-left">
+          <img src={img} alt="img" />
+        </div>
+        <div className="LandingPageTexts-container-right">
           <p>
             At Arete, we don’t just help businesses and individuals adapt—we
             help them lead the way.  to unlock your potential, embrace

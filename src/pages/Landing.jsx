@@ -10,6 +10,7 @@ import LandingPageTexts from "../components/LandingPageTexts";
 import BookUs from "../components/BookUs";
 import JoinUS from "../components/JoinUS";
 import SpecialistAreas from "../components/Homepage/SpecialistAreas";
+import Ready from "../components/Homepage/Ready";
 
 const Landing = () => {
   return (
@@ -30,6 +31,7 @@ const Landing = () => {
       <SpecialistAreas />
       <SlickCarousel />
       <Logo />
+      <Ready />
       <LandingPageTexts />
       <JoinUS />
       <Programmes />

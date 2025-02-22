@@ -57,11 +57,12 @@
 
 /* Paragraph */
 .content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
   font-family: "M PLUS Rounded 1c", serif;
-  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+
   font-style: normal;
 }
 
