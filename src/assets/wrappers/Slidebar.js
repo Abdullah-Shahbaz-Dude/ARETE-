@@ -9,6 +9,7 @@ const Wrapper = styled.aside`
   background: rgba(12, 44, 60);
   z-index: 1000;
   align-items: center;
+  justify-content: left;
   display: flex;
   transition: var(--transition);
   color: white;
@@ -17,13 +18,17 @@ const Wrapper = styled.aside`
   &.show-sidebar {
     transform: translateX(0);
   }
+
   .slidebar-solutions-btn {
     padding: 20px;
     background: transparent;
     border: transparent;
-    font-size: larger;
+    font-size: 2rem;
     color: orange;
+    cursor: pointer;
+    text-align: left;
   }
+
   .sidebar-links {
     display: flex;
     flex-direction: column;

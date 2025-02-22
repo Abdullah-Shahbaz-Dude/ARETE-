@@ -4,7 +4,7 @@ import Wrapper from "../assets/wrappers/Slidebar";
 import { FaFacebook, FaLinkedin, FaTwitter, FaTimes } from "react-icons/fa";
 
 const Slidebar = ({ isSidebarOpen, closeSidebar }) => {
-  const [sidebarsolution, setSidebarsolution] = useState(true);
+  const [sidebarsolution, setSidebarsolution] = useState(false);
   const handleSolutions = () => {
     setSidebarsolution((prev) => !prev);
   };
