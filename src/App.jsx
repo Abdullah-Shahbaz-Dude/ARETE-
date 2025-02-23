@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Home,
   Error,
@@ -9,6 +11,7 @@ import {
   Contact,
   Landing,
 } from "./pages";
+import ScrollToTop from "./components/Global Components/ScrollToTop";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +49,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <>
+      <RouterProvider router={router}></RouterProvider>
+    </>
+  );
 };
 
 export default App;
