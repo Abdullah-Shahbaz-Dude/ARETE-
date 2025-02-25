@@ -1,13 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CSS/Contact.css";
-import img from "../assets/images/contactUs/contact us.jpg";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(null); // Track submission status
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    // Prevent empty form submission
+    if (!name || !email || !message) {
+      setStatus({ type: "error", message: "All fields are required!" });
+      return;
+    }
+
+    const formData = {
+      access_key: "7d39c420-f66b-4f4a-a49a-7ff7271d8e4d",
+      fullname: name,
+      email: email,
+      message: message,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const res = await response.json();
+
+      if (res.success) {
+        setStatus({ type: "success", message: "Message sent successfully!" });
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus({ type: "error", message: "Submission failed, try again!" });
+      }
+    } catch (error) {
+      setStatus({ type: "error", message: "Network error, try again!" });
+    }
+  };
+
   return (
     <section>
       <div className="contact-hero">
-        <h1>Contact US For Booking Your Therapy</h1>
+        <h1>Contact Us For Booking Your Therapy</h1>
       </div>
+
+      {status && (
+        <div className={`status-message ${status.type}`}>{status.message}</div>
+      )}
+
+      <form className="form" onSubmit={onSubmit}>
+        <div className="form-row">
+          <label htmlFor="fullname">
+            Name
+            <input
+              type="text"
+              name="fullname"
+              className="form-input"
+              id="fullname"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+
+        <div className="form-row">
+          <label htmlFor="email">
+            Email
+            <input
+              type="email"
+              name="email"
+              className="form-input"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </label>
+        </div>
+
+        <div className="form-row">
+          <label htmlFor="message">
+            Message
+            <textarea
+              name="message"
+              className="form-input"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows="5"
+              required
+            />
+          </label>
+        </div>
+
+        <button type="submit" className="submit-btn">
+          Submit
+        </button>
+      </form>
 
       <iframe
         className="map-img"
