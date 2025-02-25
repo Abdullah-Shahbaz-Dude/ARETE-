@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./CSS/Contact.css";
+import contactUsImg from "../assets/images/contactUs/contactus.jpg";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(null); // Track submission status
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(null), 3000); // Hide message after 3s
+      return () => clearTimeout(timer); // Cleanup function
+    }
+  }, [status]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -50,7 +58,10 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="contact-hero">
+      <div
+        className="contact-hero"
+        style={{ backgroundImage: `url(${contactUsImg})` }}
+      >
         <h1>Contact Us For Booking Your Therapy</h1>
       </div>
 
@@ -98,7 +109,8 @@ const Contact = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              rows="5"
+              rows="8" /* Increase the number of visible rows */
+              cols="50"
               required
             />
           </label>
